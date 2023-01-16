@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>login</title>
+        <link rel="stylesheet" href="./login.css"> <!--external css 사용-->
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <div class="wrapper_1 input_container_1">
+
+                <h1>Login</h1>
+    
+                <div class="social-container"> <!--나중에 icon 넣고 연동하기/facebook대신 kakao-->
+                    <!--a href="#" class="social"><i class="fab fa-facebook-f"></i></!--a-->
+                    <!--a-- href="#" class="social"><i class="fab fa-google-plus-g"></i></!--a-->
+                </div>
+    
+                <input id="ID" type="text" placeholder="아이디" />
+                <input id = "PW" type = "password" placeholder="비밀번호"/>
+    
+                <a href="../find_page/find.html">아이디/비번을 찾고 싶다면?</a>
+    
+                <button id = "Login" onclick = "getLogin()"><b>로그인</b></button>
+            </div>
+    
+            <div class="wrapper_2 wrapper_2_base panel right">
+                <h1>함께 해요!</h1>
+    
+                <p>일상을 담고싶다면?</p> 
+                
+                <button id="Join" onclick="getJoin()">회원가입</button>
+            </div>
+
+        </div>
+        <script src="./login.js"></script> <!--external javascript 사용-->
+    </body>
+</html>

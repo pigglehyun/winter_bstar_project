@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./write.js"></script>
+    </head>
+
+    <body>
+        <h1>
+            <a href="./write.html">게시판</a>
+        </h1>
+        <form method='POST' action="">
+            <h3 id = writegroup>
+                <table id=writetable>
+                    <tr>            
+                        <tr>
+                            <td>제목</td>
+                            <td><input type="text" name="subject" id="title"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="file" value="사진첨부" id="picfile"></td>
+                        </tr>
+                        <tr>
+                            <td>내용</td>
+                            <td><textarea name="content" id="contents"></textarea></td>
+                        </tr>     
+                    </tr>
+                </table>
+            </h3>
+                
+            <input type="submit" value="임시 저장">
+            <input type="submit" value="저장">
+        
+        </form>
+
+            <input type="button" id = "addgroup" value="내용 추가" onclick="write()">   
+        
+
+        <script src="./write.js"></script>
+    </body>
+
+</html>
